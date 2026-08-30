@@ -1,5 +1,5 @@
 # Cumene Process Design & Techno-Economic Analysis
-Conceptual design, process simulation, equipment sizing, and techno-economic assessment of an industrial **cumene production process from benzene and propylene**.
+Conceptual design, process simulation, equipment sizing, and techno-economic assessment of an industrial cumene production process from benzene and propylene.
 
 This project was developed as a preliminary chemical process design study and covers the complete workflow from process selection and capacity estimation to Aspen HYSYS simulation, mass and energy balances, heat integration, equipment sizing, CAPEX/OPEX estimation, and economic evaluation.
 
@@ -9,9 +9,9 @@ This project was developed as a preliminary chemical process design study and co
 
 Cumene is produced through the catalytic alkylation of benzene with propylene:
 
-**Benzene + Propylene → Cumene**
+Benzene + Propylene → Cumene
 
-The process was designed based on the Luyben cumene process configuration and simulated using **Aspen HYSYS V14**.
+The process was designed based on the Luyben cumene process configuration and simulated using Aspen HYSYS V14.
 
 The final process includes:
 
@@ -39,11 +39,11 @@ The Aspen HYSYS model includes the following components:
 
 ### Main Simulation Features
 
-- Thermodynamic model: **NRTL**
-- Reactor model: **Kinetic Packed-Bed / Plug-Flow Reactor**
-- Reactor tubes: **1500**
-- Reactor feed temperature: **358 °C**
-- Reactor pressure: **25 bar**
+- Thermodynamic model: NRTL
+- Reactor model: Kinetic Packed-Bed / Plug-Flow Reactor
+- Reactor tubes: 1500
+- Reactor feed temperature: 358 °C
+- Reactor pressure: 25 bar
 - Benzene recycle loop
 - Flash separation
 - Two distillation columns
@@ -55,11 +55,11 @@ The Aspen HYSYS model includes the following components:
 
 ### Main Reaction
 
-**Benzene + Propylene → Cumene**
+Benzene + Propylene → Cumene
 
 ### Side Reaction
 
-**Cumene + Propylene → PDIB**
+Cumene + Propylene → PDIB
 
 The process was designed to achieve high propylene conversion while limiting the formation of the heavier PDIB by-product.
 
@@ -68,8 +68,6 @@ The main design challenge is therefore not only achieving high conversion, but a
 ---
 
 ## Process Flow
-
-```text
 Fresh Benzene + Fresh C3
             |
             v
@@ -112,13 +110,12 @@ Feed-Effluent Heat Exchanger
       Cumene Column C2
          /         \
       Cumene       PDIB
-```
 
 ---
 
 ## Separation and Benzene Recycle
 
-After the reaction section, the reactor effluent is cooled and sent to **Flash V-100**.
+After the reaction section, the reactor effluent is cooled and sent to Flash V-100.
 
 The flash separator removes the lighter components, mainly propane and residual unreacted propylene.
 
@@ -141,7 +138,7 @@ C2 separates:
 
 The final cumene product reaches approximately:
 
-**99.90 mol% purity**
+99.90 mol% purity
 
 ---
 
@@ -168,11 +165,11 @@ The final cumene product reaches approximately:
 ## Heat Integration & Utilities
 
 Heat integration was incorporated into the process to reduce external utility consumption.
+
 The main heat-integration features include:
 
 - Feed-effluent heat exchange
-- Reactor heat recovery
-- Preheating of reactor feed
+- Reactor heat recovery- Preheating of reactor feed
 - Cooling before flash separation
 - Condenser duties for both distillation columns
 - Reboiler duties for both distillation columns
@@ -190,9 +187,7 @@ The main heat-integration features include:
 | C2 Reboiler | 5.55 MW |
 | HX1 | 1.76 MW |
 
-The reactor is exothermic, and approximately
-- Cumene
-- Diof heat is potentially recoverable at the final design capacity.
+The reactor is exothermic, and approximately 12.95 MW of heat is potentially recoverable at the final design capacity.
 
 This recovered heat can potentially be used for steam generation or other process heating requirements.
 
@@ -206,7 +201,9 @@ The sizing calculations were carried out at the conceptual/preliminary design le
 
 ### Packed-Bed Reactor — PBR-100
 
-- Number of tubes:apacity es- Tube length:ME.md رو - Tube internal diameter: 76.2 mm
+- Number of tubes: 1500
+- Tube length: 6 m
+- Tube internal diameter: 76.2 mm
 - Catalyst bed volume: ~41 m³
 - Catalyst mass: ~41 tonnes
 - Reactor diameter: ~4.4 m
@@ -219,7 +216,10 @@ The reactor size was selected to allow high propylene conversion at a relatively
 
 ### Benzene Recovery Column — C1
 
-- Actual trays:ment of a- Diameter:EADME.md رو ی- Height: README.md رو- Main function: Benzene recovery and recycle
+- Actual trays: ~30
+- Diameter: ~1.52 m
+- Height: ~22.5 m
+- Main function: Benzene recovery and recycle
 
 The actual number of trays was estimated from theoretical stages using tray-efficiency correlations.
 
@@ -227,7 +227,10 @@ The actual number of trays was estimated from theoretical stages using tray-effi
 
 ### Cumene Purification Column — C2
 
-- Actual trays:t sizing,- Diameter:EADME.md رو ی- Height: README.md رو - Main function: Cumene / PDIB separation
+- Actual trays: ~37
+- Diameter: ~1.49 m
+- Height: ~26.35 m
+- Main function: Cumene / PDIB separation
 
 The purpose of this column is to obtain high-purity cumene while removing the heavier PDIB by-product from the bottom.
 
@@ -235,7 +238,10 @@ The purpose of this column is to obtain high-purity cumene while removing the he
 
 ### Flash Separator — V-100
 
-- Vessel volume:nd techno-eco- Diameter:EADME.md رو ی- Length: README.md رو- Approximate residence time: 5 min
+- Vessel volume: ~5.0 m³
+- Diameter: ~1.17 m
+- Length: ~4.67 m
+- Approximate residence time: 5 min
 
 The flash separator removes light gases before the liquid stream enters the distillation section.
 
@@ -253,7 +259,9 @@ Preliminary heat-exchanger sizing was carried out using:
 
 Example calculated heat-transfer areas include:
 
-- FEHE:om process s- E-101:ل README.md ر
+- FEHE: ~55 m²
+- E-101: ~121 m²
+
 Shell-and-tube configurations were selected based on thermal and mechanical design considerations.
 
 ---
@@ -263,7 +271,9 @@ Shell-and-tube configurations were selected based on thermal and mechanical desi
 The recycle pump increases the pressure of recovered benzene before returning it to the high-pressure reactor feed section.
 
 Approximate calculated pump head:
-oped as a pr
+
+~293 m
+
 ---
 
 ## Mass Balance
@@ -316,15 +326,17 @@ The economic performance is strongly influenced by feedstock prices, especially 
 | NPV | ~$1.96M |
 | IRR | 21.3% |
 | ROI | 20% |
-| Payback Period | 7.5 years || Minimum Acceptable Rate of Return | 18% |
+| Payback Period | 7.5 years |
+| Minimum Acceptable Rate of Return | 18% |
 
 Under the assumptions used in this preliminary study:
- Packed-Bed / Plug-Flow Reactor**
-- Reactor t
-and
-، کل README.m
-Therefore, the project was considered economically feasible under the selected assumptions.
 
+IRR > Minimum Acceptable Rate of Return
+
+and
+
+NPV > 0
+Therefore, the project was considered economically feasible under the selected assumptions.
 However, the economic margin is sensitive to:
 
 - Benzene price
@@ -343,7 +355,8 @@ A more detailed sensitivity analysis would be required before an industrial inve
 
 ### Software
 
--city estimation to As- Microsoft Excel
+- Aspen HYSYS V14
+- Microsoft Excel
 
 ### Engineering Methods
 
@@ -371,13 +384,15 @@ A more detailed sensitivity analysis would be required before an industrial inve
 ---
 
 ## Repository Contents
-equipment sizing, CAPEX/OPEX estimation, and economic evaluation.
+.
+├── hysys/
+│   └── Cumene_Process_Converged_HYSYS_V14.hsc
+│
+├── report/
+│   └── Cumene_Process_Design_Report.pdf
+│
+└── README.md
 
----
-
-## Project Overview
-
-Cumene is produced through the catalytic alkylation
 The repository contains the final Aspen HYSYS simulation and the detailed project report.
 
 ---
@@ -385,7 +400,9 @@ The repository contains the final Aspen HYSYS simulation and the detailed projec
 ## Simulation Requirements
 
 The process simulation was developed using:
- and techno-economic 
+
+Aspen HYSYS V14
+
 The .hsc file contains the converged Aspen HYSYS case.
 
 Opening the simulation using another Aspen HYSYS version may require file conversion or compatibility adjustments.
@@ -395,7 +412,9 @@ Opening the simulation using another Aspen HYSYS version may require file conver
 ## Project Scope
 
 This project represents a:
-rial **cumene production process from benzene and prop
+
+Preliminary / Conceptual Chemical Process Design
+
 It is not intended to represent a complete detailed engineering package.
 
 Further development would require:
@@ -421,9 +440,9 @@ Further development would require:
 The main technical challenge of the cumene process is not simply achieving high propylene conversion.
 
 The process must simultaneously achieve:
-c alkylation of benzene with propylene:
 
-**Benzene + Propylene → Cum
+High Conversion + High Cumene Selectivity + Low PDIB Formation
+
 This requires balancing:
 
 - Reactor temperature
@@ -441,9 +460,15 @@ The technical and economic performance of the process are therefore strongly int
 
 The process configuration and kinetic basis were primarily developed based on:
 
-William L. Luyben   the complete workflow from process selection an 
+William L. Luyben  
+"Design and Control of the Cumene Process"  
 Industrial & Engineering Chemistry Research  
 2010, 49, 719–734.
 
 ---
 
+## Author
+
+Chemical Process Design Project
+
+Aspen HYSYS V14 | Process Simulation | Equipment Sizing | Techno-Economic Analysis
