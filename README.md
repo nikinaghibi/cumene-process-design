@@ -386,16 +386,19 @@ A more detailed sensitivity analysis would be required before an industrial inve
 ---
 
 ## Repository Contents
+```text
 .
 ├── hysys/
-│   └── Cumene_Process_Converged_HYSYS_V14.hsc
+│   └── cumene-process-hysys.hsc
 │
 ├── report/
-│   └── Cumene_Process_Design_Report.pdf
+│   └── cumene-process-design.pdf
+│
+├── excel/
+│   └── cumene-process-economic-evaluation.xlsx
 │
 └── README.md
-
-The repository contains the final Aspen HYSYS simulation and the detailed project report.
+```
 
 ---
 
