@@ -68,6 +68,7 @@ The main design challenge is therefore not only achieving high conversion, but a
 ---
 
 ## Process Flow
+```text
 Fresh Benzene + Fresh C3
             |
             v
@@ -110,6 +111,7 @@ Feed-Effluent Heat Exchanger
       Cumene Column C2
          /         \
       Cumene       PDIB
+```
 
 ---
 
